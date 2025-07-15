@@ -1,57 +1,54 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f6ff;
-  margin: 0;
+  background-color: #f4f9ff;
+  color: #002244;
   padding: 20px;
-  color: #003366;
 }
 
 h1 {
   text-align: center;
+  margin-bottom: 30px;
   color: #003366;
 }
 
-.contenedor-malla {
+.malla-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 15px;
-  margin-top: 30px;
-}
-
-.ramo {
-  border: 2px solid #0077cc;
-  border-radius: 10px;
-  padding: 12px;
-  background-color: #e6f2ff;
-  transition: 0.3s ease;
-  cursor: pointer;
-}
-
-.ramo:hover {
-  background-color: #cce6ff;
-}
-
-.ramo.aprobado {
-  background-color: #a2e0a8;
-  border-color: #228b22;
-  color: #225522;
-  text-decoration: line-through;
-}
-
-.ramo.bloqueado {
-  background-color: #eeeeee;
-  border-color: #cccccc;
-  color: #888888;
-  cursor: not-allowed;
 }
 
 .semestre-titulo {
   grid-column: 1 / -1;
-  background-color: #0077cc;
-  color: white;
-  padding: 8px;
-  border-radius: 8px;
-  margin-top: 20px;
-  text-align: center;
   font-weight: bold;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  background-color: #0059b3;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.ramo {
+  padding: 10px;
+  border: 2px solid #0074D9;
+  border-radius: 10px;
+  background-color: #e6f0ff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ramo:hover {
+  background-color: #d0e5ff;
+}
+
+.ramo.aprobado {
+  background-color: #c6f7d0;
+  border-color: #2ecc71;
+}
+
+.ramo.bloqueado {
+  background-color: #dddddd;
+  color: #888;
+  border-style: dashed;
+  cursor: not-allowed;
 }
